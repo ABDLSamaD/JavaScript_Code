@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Navigation</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0001eeef;
+            width: 100%;
+        }
+        nav ul{
+            display: flex;
+        }
+        nav ul li{
+            position: relative;
+            padding: 1rem 2rem;
+            list-style: none;
+            font-size: 1.2rem;
+            color: rgba(100, 0, 200, 0.8);
+            background: #0181aadf;
+            cursor: pointer;
+        }
+        nav ul li:hover{
+            background: #2dcaffab;
+            color: #111010;
+        }
+        .container{
+            position: relative;
+            top: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 80%;
+            margin: 0 auto;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+        h1{
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            color: black;
+            letter-spacing: 1px;
+            line-height: 60px;
+            transition: all 0.3s;
+        }
+        .container:hover{
+            box-shadow: 1px -1px 4px 0px rgba(100, 0, 200, 0.8);
+            /* display: block; */
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Service</li>
+            <li>Contact</li>
+            <li>Looked</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Element Navigation</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatum blanditiis at impedit, suscipit commodi laboriosam quaerat laborum! Explicabo, vero.</p>
+    </div>
+    
+
+
+    <script src="34-element_navigation.js"></script>
+</body>
+</html>

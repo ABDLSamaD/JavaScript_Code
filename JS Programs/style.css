@@ -1,0 +1,120 @@
+button,
+button:focus {
+    font-size: 17px;
+    padding: 10px 25px;
+    border-radius: 0.7rem;
+    background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254));
+    border: 2px solid rgb(50, 50, 50);
+    border-bottom: 5px solid rgb(50, 50, 50);
+    box-shadow: 0px 1px 6px 0px rgb(158, 129, 254);
+    transform: translate(0, -3px);
+    transition: 0.2s;
+    transition-timing-function: linear;
+}
+
+button:active {
+    transform: translate(0, 0);
+    border-bottom: 2px solid rgb(50, 50, 50);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background: #9e9e9e;
+}
+
+#main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #9e9e9e;
+    box-shadow: inset -5px 5px 22px #787878,
+        inset 5px -5px 22px #c4c4c4;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#main #first {
+    margin-bottom: 1em;
+}
+
+#first {
+    border-radius: 50px;
+    background: #7b4c4c;
+    box-shadow: inset 5px 5px 7px #6c4343,
+        inset -5px -5px 7px #8a5555;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yellow {
+    background: yellow;
+    color: white;
+}
+
+.red {
+    background: red;
+    color: white;
+}
+
+.text-black {
+    color: black;
+}
+
+.buttons {
+    display: grid;
+    grid-template-rows: minmax(auto repeat(10px, 20px));
+    grid-gap: 10px;
+}
+
+.bulb {
+    width: 100%;
+    margin: 10px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.open {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid gray;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    from {
+        transform: translateY(-10px);
+    }
+
+    t0 {
+        transform: translateY(0);
+    }
+}
+
+.close {
+    background: yellow;
+    transition: background cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
