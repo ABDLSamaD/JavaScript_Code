@@ -37,7 +37,8 @@ let p1 = loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootst
 })
 
 
-// array duplicate
+
+/* // array duplicate
 let array = [1, 2, 1, 3, 2, 3];
 let duplicate = []
 let uniqueId = new Set();
@@ -49,3 +50,4 @@ for (const value of array) {
     }
 }
 console.log(`Duplicate values are ${duplicate}`)
+*/
